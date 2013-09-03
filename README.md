@@ -1,4 +1,7 @@
 # Raccoon
+[![Gem Version](https://badge.fury.io/rb/raccoon.png)](http://badge.fury.io/rb/raccoon)
+[![Coverage Status](https://coveralls.io/repos/yulii/raccoon/badge.png?branch=master)](https://coveralls.io/r/yulii/raccoon)
+[![Build Status](https://travis-ci.org/yulii/raccoon.png)](https://travis-ci.org/yulii/raccoon)
 
 TODO: Write a gem description
 
