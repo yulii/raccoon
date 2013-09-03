@@ -18,7 +18,33 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Setup
+at `spec_helper.rb`
+```ruby
+Raccoon.configure do |config|
+  config.application = MyRailsApp::Application
+  config.render_views = true # Default: true
+end
+```
+
+### Describe Testing Statuses
+```ruby
+require 'spec_helper'
+
+Raccoon::Controller.case do
+  get name: :root
+  get name: :about
+  get name: :terms
+
+  get name: :user, params: { id: 99999 }, response_code: 404
+
+  get controller: :profiles, action: :index
+
+  get controller: :admin, action: :index, response_code: 401
+
+end
+```
+
 
 ## Contributing
 
