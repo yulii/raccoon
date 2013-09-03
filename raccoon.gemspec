@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["yuliinfo@gmail.com"]
   spec.description   = %q{Scan controllers and views for Ruby on Rails}
   spec.summary       = %q{Testing controllers and views}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/yulii/raccoon"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)

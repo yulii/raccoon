@@ -1,5 +1,5 @@
 #!/bin/sh
-LIB_NAME="snipp"
+LIB_NAME="raccoon"
 if [ $# -ne 2 ]
 then
 	echo "Usage: $0 {version} {target}"
