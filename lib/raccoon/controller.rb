@@ -43,7 +43,7 @@ module Raccoon
               let(:params) { router.params.call }
 
               # Check HTTP Response Code
-              it "should be #{Rack::Utils::HTTP_STATUS_CODES[router.response_code]}" do
+              it "should be `#{router.response_code} #{Rack::Utils::HTTP_STATUS_CODES[router.response_code]}`" do
                 send(router.method, router.action, params)
                 expect(response.response_code).to eq(router.response_code)
               end
